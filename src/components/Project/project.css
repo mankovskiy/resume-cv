@@ -1,0 +1,50 @@
+.project {
+  padding: 70px 0;
+  /* background-color: var(--white-bg-color); */
+}
+.project-details {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.project-ditals__cover {
+  max-width: 100%;
+  margin-top: 40px;
+  box-shadow: (0px 5px 35px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+
+.project-ditales__descript {
+  margin: 40px 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+
+  text-align: center;
+}
+
+.buton-outline {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0.15;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  max-width: 169px;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  background-color: var(--white-color);
+  padding: 12px 20px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buton-outline:hover {
+  opacity: 0.8;
+}
+.buton-outline:active {
+  color: var(--dark-main-color);
+  position: relative;
+  top: 1px;
+}
