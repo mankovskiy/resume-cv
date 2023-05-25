@@ -9,7 +9,7 @@ import { ThemeProvider } from '@emotion/react';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <BrowserRouter basename="/my-resume-by-react1">
+      <BrowserRouter basename="/resume-cv">
         <App />
       </BrowserRouter>
     </ThemeProvider>
