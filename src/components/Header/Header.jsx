@@ -18,7 +18,7 @@ import {
   LogoLeftPart,
 } from './Header.styled';
 
-const LOCALSTORAGE_KEY = 'ui-theme';
+// const LOCALSTORAGE_KEY = 'ui-theme';
 
 export const Header = ({ toggleTheme, curentTheme }) => {
   const onClickHamburgerMenu = () => {};
