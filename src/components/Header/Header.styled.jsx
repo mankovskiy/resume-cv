@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 export const HeaderBCG = styled.header`
   background-color: ${({ theme }) => theme.colors.darkMainColor};
+  width: 100%;
+  position: fixed;
 `;
 
 export const BotomLine = styled.div`
@@ -34,11 +36,25 @@ export const NavFlexWrap = styled.div`
 export const NavList = styled.ul`
   display: flex;
   gap: 40px;
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: var(--dark-bg-color-text);
+    width: 100%;
+    text-align: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 `;
 
 export const NavItem = styled.li`
   padding-top: 20px;
   padding-bottom: 20px;
+  @media screen and (max-width: 768px) {
+    margin: 16px 0;
+    padding: 0;
+  }
 `;
 
 export const Links = styled(NavLink)`
@@ -51,20 +67,25 @@ export const Links = styled(NavLink)`
     opacity: 0.8;
   }
   &.active::after {
-    content: '';
-    border-radius: 2px;
-    position: absolute;
-    margin-top: 4px;
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: ${({ theme }) => theme.colors.accentColor};
+    @media screen and (min-width: 769px) {
+      content: '';
+      border-radius: 2px;
+      position: absolute;
+      margin-top: 4px;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: ${({ theme }) => theme.colors.accentColor};
+    }
   }
 `;
 
 export const NavBurger = styled.div`
   display: none;
   cursor: pointer;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 `;
 
 export const NavBurgerBar = styled.span`
