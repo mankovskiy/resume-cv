@@ -19,6 +19,8 @@
 
 ![Creating repo from a template step 2](./assets/template-step-2.png)
 
+<!--  -->
+
 После того как репозиторий будет создан, необходимо перейти в настройки
 созданного репозитория на вкладку `Settings` > `Actions` > `General` как
 показано на изображении.
