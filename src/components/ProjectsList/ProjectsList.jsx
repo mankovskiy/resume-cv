@@ -1,17 +1,18 @@
-import { Project } from 'components/Project/Project';
+import { ProjectCard } from 'components/Project/ProjectCard';
 import { List } from 'Page/Projects/Projects.styled';
 
 export const ProjectList = ({ projects }) => {
   return (
     <List>
-      {projects.map(({ title, id, img, skills, gitLink }) => {
+      {projects.map(({ title, id, img }) => {
         return (
-          <Project
+          <ProjectCard
             title={title}
             key={id}
             img={img}
-            skills={skills}
-            gitLink={gitLink}
+            id={id}
+            // skills={skills}
+            // gitLink={gitLink}
           />
         );
       })}

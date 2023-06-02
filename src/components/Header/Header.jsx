@@ -18,19 +18,9 @@ import {
   LogoLeftPart,
 } from './Header.styled';
 
-// const LOCALSTORAGE_KEY = 'ui-theme';
+const LOCALSTORAGE_KEY = 'ui-theme';
 
-export const Header = ({ toggleTheme }) => {
-  // const [theme, setTheme] = useState('light');
-
-  // const toggleTheme = () => {
-  //   if (theme === 'light') {
-  //     setTheme('dark');
-  //   } else {
-  //     setTheme('light');
-  //   }
-  // };
-
+export const Header = ({ toggleTheme, curentTheme }) => {
   const onClickHamburgerMenu = () => {};
 
   // useEffect(() => {
@@ -65,7 +55,11 @@ export const Header = ({ toggleTheme }) => {
               <NavBurgerBar></NavBurgerBar>
               <NavBurgerBar></NavBurgerBar>
             </NavBurger>
-            <ThemeBtn type="button" onClick={toggleTheme}>
+            <ThemeBtn
+              type="button"
+              onClick={toggleTheme}
+              curentTheme={curentTheme}
+            >
               <ThemeIcon src={white} alt="" />
               <ThemeIcon src={moon} alt="" />
             </ThemeBtn>

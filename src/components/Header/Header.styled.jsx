@@ -50,7 +50,6 @@ export const Links = styled(NavLink)`
   &:hover {
     opacity: 0.8;
   }
-
   &.active::after {
     content: '';
     border-radius: 2px;
@@ -96,6 +95,11 @@ export const ThemeBtn = styled.button`
     height: 24px;
     background-color: ${({ theme }) => theme.colors.whiteColor};
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &::before {
+    transform: ${({ curentTheme }) =>
+      curentTheme === 'light' ? 'translateX(0)' : 'translateX(26px)'};
+    /* transform: translateX(26px); */
   }
 `;
 

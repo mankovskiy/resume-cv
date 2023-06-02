@@ -1,118 +1,126 @@
 // import './Main.css';
 import '../../styles/style.css';
 import { ProjectsTitle } from 'Page/Projects/Projects.styled';
-import { Hero } from './Main.styled';
+import {
+  Hero,
+  HeroWrap,
+  HeroTitle,
+  HeroName,
+  HeroBottom,
+  HeroTitleSmall,
+  Button,
+  Section,
+} from './Main.styled';
+import { Container } from 'components/App.styled';
+import { ProjectList } from 'components/ProjectsList/ProjectsList';
 
-export const Main = () => {
+export const Main = ({ projects }) => {
   return (
     <main>
       <Hero>
-        <div className="hero__wrap">
-          <span className="hero__title">
+        <HeroWrap>
+          <HeroTitle>
             Hi, my name is
-            <span className="hero__name"> Stanislav Mankovskyi</span>
-          </span>
-          <h1 className="hero__title hero__title--small">
-            a frontend developer
-          </h1>
-          <p className="hero__bottom">
-            with passion for learning and creating.
-          </p>
+            <HeroName> Stanislav Mankovskyi</HeroName>
+          </HeroTitle>
+          <HeroTitleSmall>a frontend developer</HeroTitleSmall>
+          <HeroBottom>with passion for learning and creating.</HeroBottom>
 
-          <button className="button">Download CV</button>
-        </div>
+          <Button>Download CV</Button>
+        </HeroWrap>
       </Hero>
-      <section className="projects">
-        <div className="container">
+      <Section>
+        <Container>
           <ProjectsTitle>Projects</ProjectsTitle>
-          <ul className="projects__list">
-            <li className="projects__item">
+          {/* <List>
+            <Item>
               <a href="{}" className="projects__link">
-                <div className="thumb">
+                <Thumb>
                   <img
                     src="https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640"
                     alt=""
                     className="projects__img"
                   />
-                  <div className="projects-wrap__name">
+                  <ProjectsWrapNname>
                     <p className="projects__name">Gaming streaming portal</p>
-                  </div>
-                </div>
+                  </ProjectsWrapNname>
+                </Thumb>
               </a>
-            </li>
-            <li className="projects__item">
+            </Item>
+            <Item>
               <a href="{}" className="projects__link">
-                <div className="thumb">
+                <Thumb>
                   <img
                     src="https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640"
                     alt=""
                     className="projects__img"
                   />
-                  <div className="projects-wrap__name">
+                  <ProjectsWrapNname>
                     <p className="projects__name">Gaming streaming portal</p>
-                  </div>
-                </div>
+                  </ProjectsWrapNname>
+                </Thumb>
               </a>
-            </li>
-            <li className="projects__item">
+            </Item>
+            <Item>
               <a href="{}" className="projects__link">
-                <div className="thumb">
+                <Thumb>
                   <img
                     src="https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640"
                     alt=""
                     className="projects__img"
                   />
-                  <div className="projects-wrap__name">
+                  <ProjectsWrapNname>
                     <p className="projects__name">Gaming streaming portal</p>
-                  </div>
-                </div>
+                  </ProjectsWrapNname>
+                </Thumb>
               </a>
-            </li>
-            <li className="projects__item">
+            </Item>
+            <Item>
               <a href="{}" className="projects__link">
-                <div className="thumb">
+                <Thumb>
                   <img
                     src="https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640"
                     alt=""
                     className="projects__img"
                   />
-                  <div className="projects-wrap__name">
+                  <ProjectsWrapNname>
                     <p className="projects__name">Gaming streaming portal</p>
-                  </div>
-                </div>
+                  </ProjectsWrapNname>
+                </Thumb>
               </a>
-            </li>
-            <li className="projects__item">
+            </Item>
+            <Item>
               <a href="{}" className="projects__link">
-                <div className="thumb">
+                <Thumb>
                   <img
                     src="https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640"
                     alt=""
                     className="projects__img"
                   />
-                  <div className="projects-wrap__name">
+                  <ProjectsWrapNname>
                     <p className="projects__name">Gaming streaming portal</p>
-                  </div>
-                </div>
+                  </ProjectsWrapNname>
+                </Thumb>
               </a>
-            </li>
-            <li className="projects__item">
+            </Item>
+            <Item>
               <a href="{}" className="projects__link">
-                <div className="thumb">
+                <Thumb>
                   <img
                     src="https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640"
                     alt=""
                     className="projects__img"
                   />
-                  <div className="projects-wrap__name">
+                  <ProjectsWrapNname>
                     <p className="projects__name">Gaming streaming portal</p>
-                  </div>
-                </div>
+                  </ProjectsWrapNname>
+                </Thumb>
               </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+            </Item>
+          </List> */}
+          <ProjectList projects={projects} />
+        </Container>
+      </Section>
     </main>
   );
 };
