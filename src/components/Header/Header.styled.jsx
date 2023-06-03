@@ -39,9 +39,9 @@ export const NavList = styled.ul`
   @media screen and (max-width: 768px) {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 65px;
     flex-direction: column;
-    background-color: var(--dark-bg-color-text);
+    background-color: ${({ theme }) => theme.colors.darkThemeBgColor};
     width: 100%;
     text-align: center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

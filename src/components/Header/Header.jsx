@@ -10,7 +10,6 @@ import {
   NavList,
   NavItem,
   NavBurger,
-  NavBurgerBar,
   ThemeBtn,
   ThemeIcon,
   Links,
@@ -42,13 +41,19 @@ export const Header = ({ toggleTheme, curentTheme }) => {
             </Logo>
             <NavList className={isOpenMenu ? 'active' : ''}>
               <NavItem>
-                <Links to="/">Home</Links>
+                <Links onClick={toggleMenu} to="/">
+                  Home
+                </Links>
               </NavItem>
               <NavItem>
-                <Links to="/projects">Projects</Links>
+                <Links onClick={toggleMenu} to="/projects">
+                  Projects
+                </Links>
               </NavItem>
               <NavItem>
-                <Links to="/skills">Skills</Links>
+                <Links onClick={toggleMenu} to="/skills">
+                  Skills
+                </Links>
               </NavItem>
               <NavItem>
                 <Links to="/contacts">Contacts</Links>
