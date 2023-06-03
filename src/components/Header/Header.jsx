@@ -1,5 +1,5 @@
 // import { NavLink } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import moon from '../../images/moon.svg';
 import white from '../../images/white.svg';
 import { Container } from 'components/App.styled';
