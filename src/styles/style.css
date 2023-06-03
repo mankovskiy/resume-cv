@@ -412,7 +412,7 @@ body {
     display: block;
   }
 } */
-.hamburger--active .bar:nth-child(2) {
+/* .hamburger--active .bar:nth-child(2) {
   opacity: 0;
 }
 .hamburger--active .bar:nth-child(1) {
@@ -420,7 +420,7 @@ body {
 }
 .hamburger--active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-}
+} */
 
 /* @media screen and (max-width: 768px) {
   .nav__list {
@@ -442,6 +442,6 @@ body {
   }
 } */
 
-.nav__list--active {
+/* .nav__list--active {
   left: 0;
-}
+} */

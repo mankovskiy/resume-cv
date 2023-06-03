@@ -46,6 +46,9 @@ export const NavList = styled.ul`
     text-align: center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  &.active {
+    left: 0;
+  }
 `;
 
 export const NavItem = styled.li`
@@ -86,16 +89,35 @@ export const NavBurger = styled.div`
   @media screen and (max-width: 768px) {
     display: block;
   }
+  span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: ${({ theme }) => theme.colors.whiteColor};
+  }
+  &.active {
+    span:nth-of-type(2) {
+      opacity: 0;
+    }
+    span:nth-of-type(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    span:nth-of-type(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
 `;
 
-export const NavBurgerBar = styled.span`
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: ${({ theme }) => theme.colors.whiteColor};
-`;
+// export const NavBurgerBar = styled.span`
+//   display: block;
+//   width: 25px;
+//   height: 3px;
+//   margin: 5px auto;
+//   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   background-color: ${({ theme }) => theme.colors.whiteColor};
+// `;
 
 export const ThemeBtn = styled.button`
   margin-left: 15px;

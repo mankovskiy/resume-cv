@@ -1,5 +1,5 @@
 // import { NavLink } from 'react-router-dom';
-// import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import moon from '../../images/moon.svg';
 import white from '../../images/white.svg';
 import { Container } from 'components/App.styled';
@@ -21,7 +21,11 @@ import {
 // const LOCALSTORAGE_KEY = 'ui-theme';
 
 export const Header = ({ toggleTheme, curentTheme }) => {
-  const onClickHamburgerMenu = () => {};
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+  const toggleMenu = () => {
+    return setIsOpenMenu(!isOpenMenu);
+  };
 
   // useEffect(() => {
   //   chekLocalStor();
@@ -36,7 +40,7 @@ export const Header = ({ toggleTheme, curentTheme }) => {
               <LogoLeftPart>Freelancer </LogoLeftPart>
               portfolio
             </Logo>
-            <NavList>
+            <NavList className={isOpenMenu ? 'active' : ''}>
               <NavItem>
                 <Links to="/">Home</Links>
               </NavItem>
@@ -50,10 +54,13 @@ export const Header = ({ toggleTheme, curentTheme }) => {
                 <Links to="/contacts">Contacts</Links>
               </NavItem>
             </NavList>
-            <NavBurger onClick={onClickHamburgerMenu}>
-              <NavBurgerBar></NavBurgerBar>
-              <NavBurgerBar></NavBurgerBar>
-              <NavBurgerBar></NavBurgerBar>
+            <NavBurger
+              onClick={toggleMenu}
+              className={isOpenMenu ? 'active' : ''}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
             </NavBurger>
             <ThemeBtn
               type="button"
