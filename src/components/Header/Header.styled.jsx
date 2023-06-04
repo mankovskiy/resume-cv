@@ -23,7 +23,15 @@ export const Logo = styled(NavLink)`
   font-size: 24px;
   line-height: 1;
 `;
-export const LogoLeftPart = styled.span`
+
+export const LogoWrap = styled.ul`
+  display: flex;
+  @media screen and (max-width: 480px) {
+    /* text-align: center; */
+    display: block;
+  }
+`;
+export const LogoLeftPart = styled.li`
   font-weight: 700;
 `;
 

@@ -14,6 +14,7 @@ import {
   ThemeIcon,
   Links,
   Logo,
+  LogoWrap,
   LogoLeftPart,
 } from './Header.styled';
 
@@ -36,8 +37,10 @@ export const Header = ({ toggleTheme, curentTheme }) => {
         <Container>
           <NavFlexWrap>
             <Logo to="/">
-              <LogoLeftPart>Freelancer </LogoLeftPart>
-              portfolio
+              <LogoWrap>
+                <LogoLeftPart>Freelancer&thinsp;</LogoLeftPart>
+                <li>portfolio</li>
+              </LogoWrap>
             </Logo>
             <NavList className={isOpenMenu ? 'active' : ''}>
               <NavItem>
