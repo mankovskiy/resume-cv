@@ -15,8 +15,12 @@ export const ProjectsTitle = styled.h2`
 `;
 
 export const List = styled.ul`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  /* display: block; */
+
+  @media screen and (min-width: 769px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 30px;
+  }
 `;

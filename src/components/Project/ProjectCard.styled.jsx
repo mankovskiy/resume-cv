@@ -9,20 +9,29 @@ export const Img = styled.img`
 export const List = styled.ul`
   display: flex;
   justify-content: center;
-
   flex-wrap: wrap;
   gap: 30px;
 `;
 
 export const Item = styled.li`
-  flex-basis: calc((100% - 60px) / 3);
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  /* flex-basis: calc((100% - 60px) / 3); */
 `;
 export const Thumb = styled.div`
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.3s ease-in-out;
   border-radius: 10px;
   overflow: hidden;
-  min-width: 370px;
+  max-width: 370px;
   &:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
