@@ -59,7 +59,9 @@ export const Header = ({ toggleTheme, curentTheme }) => {
                 </Links>
               </NavItem>
               <NavItem>
-                <Links to="/contacts">Contacts</Links>
+                <Links onClick={toggleMenu} to="/contacts">
+                  Contacts
+                </Links>
               </NavItem>
             </NavList>
             <NavBurger
