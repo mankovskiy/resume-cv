@@ -86,4 +86,3 @@ export const Header = ({ toggleTheme, curentTheme }) => {
     </HeaderBCG>
   );
 };
-// dsc
