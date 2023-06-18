@@ -1,39 +1,3 @@
-// export const chekLocalStor = () => {
-//   //   const theme = window.localStorage.getItem(LOCALSTORAGE_KEY);
-//     console.log(theme);
-//     if (theme === 'dark') {
-//       setThemeChange('dark');
-//       bodyDarkTheme.classList.add('dark');
-//     } else {
-//       setThemeChange('light');
-//       bodyDarkTheme.classList.remove('dark');
-//     }
-// };
-
-// export const onThemeToggle = () => {
-//     themeBtn.classList.toggle('theme-btn--active');
-//     const isDark = bodyDarkTheme.classList.toggle('dark');
-//     if (isDark) {
-//       window.localStorage.setItem(LOCALSTORAGE_KEY, 'dark');
-//     } else {
-//       window.localStorage.setItem(LOCALSTORAGE_KEY, 'light');
-//     }
-// };
-
-// export const lightTheme = {
-//   sectionTitle: 'var(--accent-color)',
-//   bcgColor: 'var(--white-main-color)',
-//   titleColor: 'var(--accent-color)',
-//   textColor: 'var(--dark-main-color)',
-// };
-
-// export const darkTheme = {
-//   sectionTitle: 'var(--white-color)',
-//   bcgColor: 'var(--dark-theme-bg-color)',
-//   titleColor: 'var(--white-color)',
-//   textColor: 'var(--white-color)',
-// };
-
 export const theme = {
   lightTheme: {
     sectionTitle: 'var(--accent-color)',

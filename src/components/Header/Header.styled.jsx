@@ -35,7 +35,7 @@ export const LogoLeftPart = styled.li`
   font-weight: 700;
 `;
 
-export const NavFlexWrap = styled.div`
+export const NavFlexWrap = styled.nav`
   display: flex;
   align-items: center;
   justify-content: flex-end;

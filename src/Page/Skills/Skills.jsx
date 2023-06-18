@@ -6,7 +6,7 @@ import {
   SectionTitleText,
 } from 'components/App.styled';
 
-export const Skills = () => {
+const Skills = () => {
   return (
     <main>
       <SectionSkills>
@@ -26,3 +26,5 @@ export const Skills = () => {
     </main>
   );
 };
+
+export default Skills;

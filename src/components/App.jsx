@@ -1,34 +1,41 @@
 import { Routes, Route } from 'react-router-dom';
-import { Projects } from 'Page/Projects/Projects';
-import { ProjectDetails } from 'Page/ProjectDetails/ProjectDetails';
-import { HomePage } from 'Page/HomePage/HomePage';
-import { Skills } from 'Page/Skills/Skills';
-import { Contacts } from 'Page/Contacts/Contacts';
-import { SharedLayout } from './SharedLayout/SharedLayout';
+import { lazy } from 'react';
+
+import { SharedLayout } from '../components/SharedLayout/SharedLayout';
 import { ThemeProvider } from '@emotion/react';
 import { useState, useEffect } from 'react';
 import { theme } from 'js/theme';
 import { GlobalStyles } from 'js/global';
 
+const Projects = lazy(() => import('../Page/Projects/Projects'));
+const ProjectDetails = lazy(() =>
+  import('../Page/ProjectDetails/ProjectDetails')
+);
+const HomePage = lazy(() => import('../Page/HomePage/HomePage'));
+const Skills = lazy(() => import('../Page/Skills/Skills'));
+const Contacts = lazy(() => import('../Page/Contacts/Contacts'));
+// const SharedLayout = lazy(() =>
+//   import('../components/SharedLayout/SharedLayout')
+// );
+
 const LOCALSTORAGE_KEY = 'ui-theme';
 export const App = () => {
   const [curentTheme, setCurentTheme] = useState('light');
 
-  // function chekLocalStor() {
-  //   const theme = localStorage.getItem(LOCALSTORAGE_KEY);
-
-  //   if (theme === 'dark') {
-  //     setCurentTheme('dark');
-  //   } else {
-  //     setCurentTheme('light');
-  //   }
-  // }
+  const toggleTheme = () => {
+    if (curentTheme === 'light') {
+      setCurentTheme('dark');
+      setMode('dark');
+    } else {
+      setCurentTheme('light');
+      setMode('light');
+    }
+  };
   const setMode = mode => {
     window.localStorage.setItem(LOCALSTORAGE_KEY, mode);
     setCurentTheme(mode);
   };
   useEffect(() => {
-    // chekLocalStor();
     const localTheme = window.localStorage.getItem(LOCALSTORAGE_KEY);
     if (localTheme) {
       setCurentTheme(localTheme);
@@ -36,18 +43,6 @@ export const App = () => {
       setMode('light');
     }
   }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem(LOCALSTORAGE_KEY, curentTheme);
-  // }, [curentTheme]);
-
-  const toggleTheme = () => {
-    if (curentTheme === 'light') {
-      setCurentTheme('dark');
-    } else {
-      setCurentTheme('light');
-    }
-  };
 
   return (
     <ThemeProvider
@@ -64,7 +59,6 @@ export const App = () => {
           <Route index element={<HomePage />} />
           <Route path="projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDetails />} />
-          <Route path="/:id" element={<ProjectDetails />} />
           <Route
             path="contacts"
             element={

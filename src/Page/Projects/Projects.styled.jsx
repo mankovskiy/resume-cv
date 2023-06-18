@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const ProjectsSection = styled.section`
-  padding-top: 75px;
+  padding-top: 140px;
   padding-bottom: 70px;
 `;
 

@@ -5,7 +5,7 @@ import { projects } from '../../dataProjects/projects';
 import { ProjectsTitle } from './Projects.styled';
 import { ProjectList } from 'components/ProjectsList/ProjectsList';
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <main>
       <ProjectsSection>
@@ -17,3 +17,5 @@ export const Projects = () => {
     </main>
   );
 };
+
+export default Projects;

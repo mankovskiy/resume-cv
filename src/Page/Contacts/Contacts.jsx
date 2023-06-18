@@ -8,7 +8,7 @@ import {
   Container,
 } from 'components/App.styled';
 
-export const Contacts = ({ mail, tel, text }) => {
+const Contacts = ({ mail, tel, text }) => {
   return (
     <main>
       <SectionCont>
@@ -25,3 +25,4 @@ export const Contacts = ({ mail, tel, text }) => {
     </main>
   );
 };
+export default Contacts;

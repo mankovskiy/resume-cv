@@ -7,7 +7,7 @@ export const SharedLayout = ({ toggleTheme, curentTheme }) => {
   return (
     <div>
       <Header toggleTheme={toggleTheme} curentTheme={curentTheme} />
-      <Suspense fallback={<div>Loading page...</div>}>
+      <Suspense fallback={<p>Loading...</p>}>
         <Outlet />
       </Suspense>
       <Footer />

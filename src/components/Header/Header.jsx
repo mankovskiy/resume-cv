@@ -27,10 +27,6 @@ export const Header = ({ toggleTheme, curentTheme }) => {
     return setIsOpenMenu(!isOpenMenu);
   };
 
-  // useEffect(() => {
-  //   chekLocalStor();
-  // }, []);
-
   return (
     <HeaderBCG>
       <BotomLine>
@@ -44,22 +40,42 @@ export const Header = ({ toggleTheme, curentTheme }) => {
             </Logo>
             <NavList className={isOpenMenu ? 'active' : ''}>
               <NavItem>
-                <Links onClick={toggleMenu} to="/">
+                <Links
+                  onClick={() => {
+                    setIsOpenMenu(false);
+                  }}
+                  to="/"
+                >
                   Home
                 </Links>
               </NavItem>
               <NavItem>
-                <Links onClick={toggleMenu} to="/projects">
+                <Links
+                  onClick={() => {
+                    setIsOpenMenu(false);
+                  }}
+                  to="/projects"
+                >
                   Projects
                 </Links>
               </NavItem>
               <NavItem>
-                <Links onClick={toggleMenu} to="/skills">
+                <Links
+                  onClick={() => {
+                    setIsOpenMenu(false);
+                  }}
+                  to="/skills"
+                >
                   Skills
                 </Links>
               </NavItem>
               <NavItem>
-                <Links onClick={toggleMenu} to="/contacts">
+                <Links
+                  onClick={() => {
+                    setIsOpenMenu(false);
+                  }}
+                  to="/contacts"
+                >
                   Contacts
                 </Links>
               </NavItem>

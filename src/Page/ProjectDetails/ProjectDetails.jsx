@@ -11,7 +11,7 @@ import {
 } from './ProjectDetails.styled';
 import { getProjectById } from 'dataProjects/projects';
 
-export const ProjectDetails = () => {
+const ProjectDetails = () => {
   const { id } = useParams();
 
   const project = getProjectById(id);
@@ -23,7 +23,10 @@ export const ProjectDetails = () => {
         <Container>
           <ProjectWrap>
             <SectionTitle>{title}</SectionTitle>
-            <ProjectDitalsCover src={img} alt={''} />
+            <ProjectDitalsCover
+              src={img ? img : 'https://dummyimage.com/768x360/fff/aaa'}
+              alt={''}
+            />
             <ProjectDitalesDescript>
               <p>{skills}</p>
             </ProjectDitalesDescript>
@@ -41,3 +44,5 @@ export const ProjectDetails = () => {
     </main>
   );
 };
+
+export default ProjectDetails;

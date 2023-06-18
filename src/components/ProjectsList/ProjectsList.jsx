@@ -9,10 +9,8 @@ export const ProjectList = ({ projects }) => {
           <ProjectCard
             title={title}
             key={id}
-            img={img}
+            img={img ? img : 'https://dummyimage.com/370x360/fff/aaa'}
             id={id}
-            // skills={skills}
-            // gitLink={gitLink}
           />
         );
       })}

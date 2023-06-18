@@ -2,10 +2,12 @@
 import { projects } from 'dataProjects/projects';
 import { Main } from '../../components/Main/Main';
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
-    <>
+    <main>
       <Main projects={projects} />
-    </>
+    </main>
   );
 };
+
+export default HomePage;

@@ -1,39 +1,41 @@
+import phoneBook from '../images/phoneBook.png';
+import filmoteka from '../images/filmoteka.png';
 export const projects = [
   {
     id: '1',
     title: 'Phonebook',
     skills: 'NodeJS, MySQL, MongoDB, PHP, Laravel',
-    img: ' https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640',
-    gitLink: 'https://github.com/mankovskiy',
+    img: `${phoneBook}`,
+    gitLink: 'https://mankovskiy.github.io/goit-react-hw-08-phonebook/',
   },
   {
     id: '2',
-    title: 'GutHub',
+    title: 'Filmoteka',
     skills: 'NodeJS, MySQL, MongoDB, PHP, Laravel',
-    img: ' https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640',
-    gitLink: 'https://github.com/mankovskiy',
+    img: `${filmoteka}`,
+    gitLink: 'https://mankovskiy.github.io/goit-react-hw-05-movies/',
   },
-  {
-    id: '3',
-    title: 'GitLab',
-    skills: 'NodeJS, MySQL, MongoDB, PHP, Laravel',
-    img: ' https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640',
-    gitLink: 'https://github.com/mankovskiy',
-  },
-  {
-    id: '4',
-    title: 'Serial',
-    skills: 'NodeJS, MySQL, MongoDB, PHP, Laravel',
-    img: ' https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640',
-    gitLink: 'https://github.com/mankovskiy',
-  },
-  {
-    id: '5',
-    title: 'Potato',
-    skills: 'NodeJS, MySQL, MongoDB, PHP, Laravel',
-    img: ' https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640',
-    gitLink: 'https://github.com/mankovskiy',
-  },
+  // {
+  //   id: '3',
+  //   title: 'GitLab',
+  //   skills: 'NodeJS, MySQL, MongoDB, PHP, Laravel',
+  //   img: '',
+  //   gitLink: 'https://github.com/mankovskiy',
+  // },
+  // {
+  //   id: '4',
+  //   title: 'Serial',
+  //   skills: 'NodeJS, MySQL, MongoDB, PHP, Laravel',
+  //   img: '',
+  //   gitLink: 'https://github.com/mankovskiy',
+  // },
+  // {
+  //   id: '5',
+  //   title: 'Potato',
+  //   skills: 'NodeJS, MySQL, MongoDB, PHP, Laravel',
+  //   img: '',
+  //   gitLink: 'https://github.com/mankovskiy',
+  // },
 ];
 
 export const getProjectById = projectId => {
