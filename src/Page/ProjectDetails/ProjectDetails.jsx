@@ -8,6 +8,7 @@ import {
   ProjectDitalsCover,
   ProjectDitalesDescript,
   ButonOutline,
+  LinkDetail,
 } from './ProjectDetails.styled';
 import { getProjectById } from 'dataProjects/projects';
 
@@ -23,10 +24,16 @@ const ProjectDetails = () => {
         <Container>
           <ProjectWrap>
             <SectionTitle>{title}</SectionTitle>
-            <ProjectDitalsCover
-              src={img ? img : 'https://dummyimage.com/768x360/fff/aaa'}
-              alt={''}
-            />
+            <LinkDetail
+              href={gitLink}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <ProjectDitalsCover
+                src={img ? img : 'https://dummyimage.com/768x360/fff/aaa'}
+                alt={''}
+              />
+            </LinkDetail>
             <ProjectDitalesDescript>
               <p>{skills}</p>
             </ProjectDitalesDescript>

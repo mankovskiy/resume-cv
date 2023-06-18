@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+// import { projects } from 'dataProjects/projects';
 
 export const ProjectsSection = styled.section`
   padding-top: 140px;
@@ -15,8 +16,6 @@ export const ProjectsTitle = styled.h2`
 `;
 
 export const List = styled.ul`
-  /* display: block; */
-
   @media screen and (min-width: 769px) {
     display: flex;
     flex-wrap: wrap;

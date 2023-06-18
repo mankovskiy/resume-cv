@@ -19,11 +19,8 @@ export const Item = styled.li`
       margin-bottom: 30px;
     }
   }
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
-  /* flex-basis: calc((100% - 60px) / 3); */
 `;
+
 export const Thumb = styled.div`
   margin-left: auto;
   margin-right: auto;

@@ -12,11 +12,15 @@ export const ProjectWrap = styled.div`
 `;
 
 export const ProjectDitalsCover = styled.img`
-  margin: 0 auto;
+  width: 100%;
+
   max-width: 768px;
   margin-top: 40px;
   box-shadow: (0px 5px 35px rgba(0, 0, 0, 0.25));
   border-radius: 10px;
+`;
+export const LinkDetail = styled.a`
+  margin: 0 auto;
 `;
 
 export const ProjectDitalesDescript = styled.div`
