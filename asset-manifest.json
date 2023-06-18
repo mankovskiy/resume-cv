@@ -1,16 +1,29 @@
 {
   "files": {
-    "main.css": "/resume-cv/static/css/main.62407de6.css",
-    "main.js": "/resume-cv/static/js/main.718ada4a.js",
+    "main.js": "/resume-cv/static/js/main.925b171d.js",
+    "static/css/820.8e876fc0.chunk.css": "/resume-cv/static/css/820.8e876fc0.chunk.css",
+    "static/js/820.1e19864d.chunk.js": "/resume-cv/static/js/820.1e19864d.chunk.js",
+    "static/js/127.6593af25.chunk.js": "/resume-cv/static/js/127.6593af25.chunk.js",
+    "static/css/108.8e876fc0.chunk.css": "/resume-cv/static/css/108.8e876fc0.chunk.css",
+    "static/js/108.3a5f87df.chunk.js": "/resume-cv/static/js/108.3a5f87df.chunk.js",
+    "static/js/697.a050823f.chunk.js": "/resume-cv/static/js/697.a050823f.chunk.js",
+    "static/js/667.7d8da02c.chunk.js": "/resume-cv/static/js/667.7d8da02c.chunk.js",
+    "static/media/filmoteka.png": "/resume-cv/static/media/filmoteka.6e3c1a00e2b4a4b76caf.png",
+    "static/media/phoneBook.png": "/resume-cv/static/media/phoneBook.ce5589e84259b1c63cfb.png",
     "static/media/abstract.png": "/resume-cv/static/media/abstract.4ed07a49a0adf2a33024.png",
     "static/media/white.svg": "/resume-cv/static/media/white.51393a375a81e44f27f1e33d713ca0ae.svg",
     "static/media/moon.svg": "/resume-cv/static/media/moon.829f022e764b1d37016e364c5447dfdb.svg",
     "index.html": "/resume-cv/index.html",
-    "main.62407de6.css.map": "/resume-cv/static/css/main.62407de6.css.map",
-    "main.718ada4a.js.map": "/resume-cv/static/js/main.718ada4a.js.map"
+    "main.925b171d.js.map": "/resume-cv/static/js/main.925b171d.js.map",
+    "820.8e876fc0.chunk.css.map": "/resume-cv/static/css/820.8e876fc0.chunk.css.map",
+    "820.1e19864d.chunk.js.map": "/resume-cv/static/js/820.1e19864d.chunk.js.map",
+    "127.6593af25.chunk.js.map": "/resume-cv/static/js/127.6593af25.chunk.js.map",
+    "108.8e876fc0.chunk.css.map": "/resume-cv/static/css/108.8e876fc0.chunk.css.map",
+    "108.3a5f87df.chunk.js.map": "/resume-cv/static/js/108.3a5f87df.chunk.js.map",
+    "697.a050823f.chunk.js.map": "/resume-cv/static/js/697.a050823f.chunk.js.map",
+    "667.7d8da02c.chunk.js.map": "/resume-cv/static/js/667.7d8da02c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62407de6.css",
-    "static/js/main.718ada4a.js"
+    "static/js/main.925b171d.js"
   ]
 }
